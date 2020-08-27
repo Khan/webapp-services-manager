@@ -211,6 +211,7 @@ class App extends React.Component {
             <CssBaseline/>
             <AppBar position="fixed">
                 <Toolbar>
+                    {/* TODO(dbraley): replace this with a configured value */}
                     <Typography variant="h4">Khan Webapp Services Manager</Typography>
                     {
                         selectedService &&
