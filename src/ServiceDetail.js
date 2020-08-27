@@ -57,8 +57,8 @@ class ServiceDetail extends React.Component {
     render() {
         const {serviceName} = this.props;
 
-        const detailTooltip = serviceName === "khan-ui" ?
-            "khan-ui can't be disabled!" :
+        const detailTooltip = serviceName === "manager" ?
+            "services manager can't be disabled!" :
             `${this.isRunning() ? "Disable" : "Enable"} ${serviceName}`;
 
         return (
@@ -73,7 +73,7 @@ class ServiceDetail extends React.Component {
                             <Switch
                                 checked={this.isRunning()}
                                 onChange={this.toggleRunning}
-                                disabled={serviceName === "khan-ui"}
+                                disabled={serviceName === "manager"}
                             />
                         </div>
                     </Tooltip>
