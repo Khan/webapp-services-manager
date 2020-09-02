@@ -14,7 +14,7 @@ export default class Configuration {
             return environmentVars[configName];
         }
 
-        const prefixedConfigName = "KHANDO_" + configName;
+        const prefixedConfigName = "HOTEL_KA_UI_" + configName;
         if (environmentVars[prefixedConfigName]) {
             return environmentVars[prefixedConfigName];
         }
