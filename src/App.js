@@ -24,7 +24,6 @@ import {getSetting, saveSetting} from "./settings.js";
 import SideNav from "./SideNav.js"
 import LogView from "./LogView.js";
 import Configuration from "./configuration.js";
-import "./App.css";
 
 
 const styles = {
@@ -117,7 +116,6 @@ class App extends React.Component {
 
         const shouldAutoScroll = !autoScroll;
         this.setState({autoScroll: shouldAutoScroll});
-        // saveSetting("auto-scroll", shouldAutoScroll);
 
         if (shouldAutoScroll) {
             this.closeNewMessageAlert();
